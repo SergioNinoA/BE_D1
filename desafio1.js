@@ -7,7 +7,7 @@ class User {
     }
 
     getFullName(){
-        return `${this.nombre} ${this.apellido}`
+        return `El usuario se llama ${this.nombre} ${this.apellido}`
     }    
 
     addMascota(animal){
@@ -25,9 +25,9 @@ class User {
 
     getBookNames(){
         let bookList = this.libros.map((libro) => {
-            return libro.name
+            return ` ${libro.name}`
         })
-        return `Los libros de ${this.nombre} son: ${bookList}`
+        return `Los libros de ${this.nombre} son:${bookList}`
     }
 }
 
